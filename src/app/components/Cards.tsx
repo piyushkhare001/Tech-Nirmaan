@@ -1,9 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
-import dsa  from "../../../../my-app/public/dsa.jpeg"
-import roadmap  from "../../../../my-app/public/roadmap.jpeg"
-import recource  from "../../../../my-app/public/recoursce.jpeg"
-import cs  from "../../../../my-app/public/cs.jpeg"
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
@@ -11,24 +7,24 @@ const Cards = () => {
     const router = useRouter();
     const data = [
         {
-            img: dsa,
+            img: "https://tse4.mm.bing.net/th?id=OIP.I5PWZjo9BoMTAT6p-rOrcgHaDt&pid=Api&P=0&h=180",
           title: "Master DSA",
           description:
             "Dive deep into Data Structures & Algorithms with curated exercises and guides.",
         },
   
         {
-            img: recource,
+            img: 'https://tse2.mm.bing.net/th?id=OIP.F32Uh00wgNlPhaWU8QONdgHaEK&pid=Api&P=0&h=180',
           title: "Top Resources",
           description:
             "Access handpicked resources, articles, and tools to accelerate learning.",
         },
         {
-            img : cs ,
+            img : 'https://tse2.mm.bing.net/th?id=OIP.wsG0rYLtfW6p1vuPN8K3vQHaD4&pid=Api&P=0&h=180' ,
           title: "CS Foundations",
           description: "Build a strong foundation in core Computer Science concepts.",
         },      {
-            img: roadmap,
+            img: 'https://tse1.mm.bing.net/th?id=OIP.SvM4WiKq6VJoqlm_CfNzpAHaFW&pid=Api&P=0&h=180',
           title: "Career Roadmaps",
           description: "Step-by-step roadmaps to navigate various tech career paths.",
         },

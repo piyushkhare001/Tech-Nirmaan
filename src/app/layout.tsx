@@ -8,28 +8,16 @@ import { ToastContainer } from "react-toastify";
 
 export default function RootLayout({
   children,
-  params = {},
 }: {
   children: React.ReactNode;
-  params?: {
-    session?: any;
-  };
 }) {
-  const { session } = params;
-
   return (
     <html lang="en">
-      <body
-        className="bg-black"
-      >
-     
-          <SessionProvider session={session}> 
-                <ToastContainer  />
-              {children} 
-           
-               </SessionProvider>
-         
-     
+      <body className="bg-black">
+        <SessionProvider>
+          <ToastContainer />
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );

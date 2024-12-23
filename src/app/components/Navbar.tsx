@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link"; // Use next/link instead of react-router-dom's Link
@@ -5,8 +6,8 @@ import { useRouter , usePathname } from "next/navigation"; // useRouter can be k
 import { Button } from "./ui/button";
 import { useSession , signOut } from "next-auth/react";
 import { toast } from "react-toastify";
-import Logo from "../../../../my-app/public/Logo.png"
-import Image from "next/image";
+
+
 
 
 const Navbar: React.FC = () => {
@@ -56,7 +57,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center w-full max-w-7xl mx-auto">
             <div className="z-50 max-md:basis-5/12 basis-1/12">
               <Link href="/">
-                <Image src={Logo} alt="logo" className="h-11 w-auto" />
+                <img src={'https://res.cloudinary.com/dewxkt3bv/image/upload/v1734911392/logo_p2juqo.png'}  alt="logo" className="h-11 w-15" />
               </Link>
             </div>
             <div className="md:hidden">

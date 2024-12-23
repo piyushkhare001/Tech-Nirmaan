@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useEffect } from "react";
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 import Link from "next/link";
-import Image from "next/image";
-import Logo from "../../../../my-app/public/Logo.png"
+
 
 const NewFooter: React.FC = () => {
   const scrolltoabout = () => {
@@ -33,7 +33,7 @@ const NewFooter: React.FC = () => {
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row">
           <div className="flex-col">
             <Link href="/">
-              <Image src={Logo} alt="logo" className="h-11 w-auto" />
+              <img src={"https://res.cloudinary.com/dewxkt3bv/image/upload/v1734911392/logo_p2juqo.png"}  alt="logo" className="h-11 w-14" />
             </Link>
             <p className="text-white mt-3 font-regular">
               Craft Your Success Story: Build Your Perfect Resume Today!

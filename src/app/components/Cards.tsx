@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
-import Image from "next/image";
+
 import { useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
 const Cards = () => {
@@ -37,7 +38,7 @@ const Cards = () => {
     <div className="bg-neutral-900 rounded-2xl p-6 border-2 border-zinc-800 hover:border-zinc-400 shadow-lg flex flex-col items-start  max-w-sm">
       {/* Image */}
       <div className="mb-4">
-        <Image
+        <img
           src={product.img}
           alt={product.title}
           className="h-[6rem] w-[8rem] object-fit rounded-lg"

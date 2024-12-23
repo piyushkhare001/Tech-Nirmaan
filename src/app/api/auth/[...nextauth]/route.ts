@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import NextAuth, { AuthOptions, Session, User as NextAuthUser } from "next-auth";
+import NextAuth, { NextAuthOptions, Session, User as NextAuthUser } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { JWT } from "next-auth/jwt";
 import User from "@/models/User";
@@ -35,7 +35,7 @@ declare module "next-auth/jwt" {
   }
 }
 
-export const authOptions: AuthOptions = {
+export const authOptions: NextAuthOptions = {
   providers: [
     GoogleProvider({
       clientId: process.env.AUTH_GOOGLE_ID as string,

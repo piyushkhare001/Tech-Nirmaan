@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import type { NextApiRequest, NextApiResponse } from 'next';
+import type { NextApiResponse } from 'next';
 import Job from '../../../models/Job';
 import dbConnect from '../../../lib/dbConnect';
 import { NextResponse } from 'next/server';
 
-export  async function GET(req: NextApiRequest, res: NextApiResponse) {
+export  async function GET(req: Request, res: NextApiResponse) {
   await dbConnect();
 
 

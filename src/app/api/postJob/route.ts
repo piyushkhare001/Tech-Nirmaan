@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import type { NextApiRequest, NextApiResponse } from 'next';
+
 import Job from '../../../models/Job';
 import dbConnect from '../../../lib/dbConnect';
 import { NextResponse } from 'next/server';
 
-export async function POST(req: Request, res: NextApiResponse) {
+export async function POST(req: Request) {
   try {
     await dbConnect(); // Ensure DB connection is established
 

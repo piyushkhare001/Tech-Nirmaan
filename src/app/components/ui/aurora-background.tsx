@@ -1,3 +1,4 @@
+//src/app/components/ui/aurora-background.tsx
 "use client";
 import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";

@@ -1,4 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+//src/app/layout.tsx
+
+// /* eslint-disable @typescript-eslint/no-explicit-any */
 
 "use client";
 

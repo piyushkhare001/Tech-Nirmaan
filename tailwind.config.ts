@@ -87,7 +87,15 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		screens: {
+			// 'sm': '640px',
+			// 'md': '768px',
+			'custom-800': '800px', 
+			// 'lg': '1024px',
+			// 'xl': '1280px',
+		},
+		
   	}
   },
   plugins: [addVariablesForColors],

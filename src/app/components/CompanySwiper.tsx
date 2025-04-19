@@ -7,15 +7,15 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 // Import your logos
-import accenture from "../../../../my-app/public/companies-logos/accenture.png";
-import amazon from "../../../../my-app/public/companies-logos/Amazon-Logo.png";
-import capg from "../../../../my-app/public/companies-logos/capg.png";
-import geDigital from "../../../../my-app/public/companies-logos/ge-digital.png";
-import infosys from "../../../../my-app/public/companies-logos/infosys.png";
-import lti from "../../../../my-app/public/companies-logos/lti.png";
-import salesforce from "../../../../my-app/public/companies-logos/salesforce.png";
-import tcs from "../../../../my-app/public/companies-logos/tcs.png";
-import ubs from "../../../../my-app/public/companies-logos/ubs.png";
+import accenture from "../../../public/companies-logos/accenture.png";
+import amazon from "../../../public/companies-logos/Amazon-Logo.png";
+import capg from "../../../public/companies-logos/capg.png";
+import geDigital from "../../../public/companies-logos/ge-digital.png";
+import infosys from "../../../public/companies-logos/infosys.png";
+import lti from "../../../public/companies-logos/lti.png";
+import salesforce from "../../../public/companies-logos/salesforce.png";
+import tcs from "../../../public/companies-logos/tcs.png";
+import ubs from "../../../public/companies-logos/ubs.png";
 
 const companyLogos = [
   { name: "Accenture", logo: accenture, minWidth: 180 },

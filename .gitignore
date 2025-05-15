@@ -9,7 +9,12 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+# environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
 # testing
 /coverage
 

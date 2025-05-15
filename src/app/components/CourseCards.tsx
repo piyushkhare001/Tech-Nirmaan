@@ -71,7 +71,14 @@ const courses: Course[] = [
 
 export default function CourseCards() {
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-gray-950 py-20 px-4 sm:px-6 lg:px-8">
+    <section 
+    // style={{
+    //   transform: 'scale(0.8)',
+    // transformOrigin: 'top left',
+    // width: '125vw',
+    // display: 'inline-block',
+    // }} 
+    className="bg-gradient-to-b from-gray-900 to-gray-950 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-flex items-center gap-2 bg-gray-800 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-4">

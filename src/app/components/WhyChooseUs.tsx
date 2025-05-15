@@ -120,70 +120,70 @@
 // export default WhyChooseUs;
 
 
-import React from "react";
-import { FaChalkboardTeacher, FaMapSigns, FaHandsHelping, FaLightbulb } from "react-icons/fa";
+// import React from "react";
+// import { FaChalkboardTeacher, FaMapSigns, FaHandsHelping, FaLightbulb } from "react-icons/fa";
 
-const WhyChooseUs = () => {
-  const data = [
-    {
-      icon: <FaChalkboardTeacher />,
-      title: "Learn from Experts",
-      description:
-        "Master new skills with insights from seasoned professionals and real-world applications.",
-    },
-    {
-      icon: <FaMapSigns />,
-      title: "Structured Learning Paths",
-      description:
-        "Navigate your journey with step-by-step roadmaps that simplify complex topics.",
-    },
-    {
-      icon: <FaHandsHelping />,
-      title: "Supportive Community",
-      description:
-        "Connect with peers and mentors in a thriving community designed for growth.",
-    },
-    {
-      icon: <FaLightbulb />,
-      title: "Innovative Resources",
-      description:
-        "Access cutting-edge tools and resources to stay ahead in your learning journey.",
-    },
-  ];
+// const WhyChooseUs = () => {
+//   const data = [
+//     {
+//       icon: <FaChalkboardTeacher />,
+//       title: "Learn from Experts",
+//       description:
+//         "Master new skills with insights from seasoned professionals and real-world applications.",
+//     },
+//     {
+//       icon: <FaMapSigns />,
+//       title: "Structured Learning Paths",
+//       description:
+//         "Navigate your journey with step-by-step roadmaps that simplify complex topics.",
+//     },
+//     {
+//       icon: <FaHandsHelping />,
+//       title: "Supportive Community",
+//       description:
+//         "Connect with peers and mentors in a thriving community designed for growth.",
+//     },
+//     {
+//       icon: <FaLightbulb />,
+//       title: "Innovative Resources",
+//       description:
+//         "Access cutting-edge tools and resources to stay ahead in your learning journey.",
+//     },
+//   ];
 
-  return (
-    <div className="py-20 px-4 sm:px-8 bg-gradient-to-b from-black via-gray-900 to-black">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Title */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8 sm:mb-12">
-          Why Choose Us
-        </h2>
+//   return (
+//     <div className="py-20 px-4 sm:px-8 bg-gradient-to-b from-black via-gray-900 to-black">
+//       <div className="max-w-6xl mx-auto">
+//         {/* Section Title */}
+//         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8 sm:mb-12">
+//           Why Choose Us
+//         </h2>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="group bg-gray-900 rounded-lg p-6 sm:p-8 border border-gray-800 shadow-md hover:shadow-xl transition duration-300 transform group-hover:scale-105 flex flex-col items-center text-center w-full max-w-sm"
-            >
-              {/* Icon */}
-              <div className="bg-violet-800 text-white p-4 rounded-full mb-6 shadow-md text-[1.5em]">
-                {item.icon}
-              </div>
+//         {/* Cards Grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 justify-items-center">
+//           {data.map((item, index) => (
+//             <div
+//               key={index}
+//               className="group bg-gray-900 rounded-lg p-6 sm:p-8 border border-gray-800 shadow-md hover:shadow-xl transition duration-300 transform group-hover:scale-105 flex flex-col items-center text-center w-full max-w-sm"
+//             >
+//               {/* Icon */}
+//               <div className="bg-violet-800 text-white p-4 rounded-full mb-6 shadow-md text-[1.5em]">
+//                 {item.icon}
+//               </div>
 
-              {/* Title */}
-              <h3 className="text-xl font-semibold text-gray-100 mb-4">
-                {item.title}
-              </h3>
+//               {/* Title */}
+//               <h3 className="text-xl font-semibold text-gray-100 mb-4">
+//                 {item.title}
+//               </h3>
 
-              {/* Description */}
-              <p className="text-sm text-gray-300">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+//               {/* Description */}
+//               <p className="text-sm text-gray-300">{item.description}</p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-export default WhyChooseUs;
+// export default WhyChooseUs;

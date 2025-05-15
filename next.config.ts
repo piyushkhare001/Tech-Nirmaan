@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
         pathname: '/**', // Allows all paths under the hostname
       },
     ],
-		domains: ["images.unsplash.com", "images.pexels.com", "tse2.mm.bing.net"], // Add your image host domain here
+		domains: ["images.unsplash.com", "source.unsplash.com ","images.pexels.com", "tse2.mm.bing.net"], // Add your image host domain here
   },
 };
 

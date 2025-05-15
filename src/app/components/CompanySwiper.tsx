@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 // Import your logos
+// Import your logos
 import accenture from "../../../public/companies-logos/accenture.png";
 import amazon from "../../../public/companies-logos/Amazon-Logo.png";
 import capg from "../../../public/companies-logos/capg.png";
@@ -16,6 +17,7 @@ import lti from "../../../public/companies-logos/lti.png";
 import salesforce from "../../../public/companies-logos/salesforce.png";
 import tcs from "../../../public/companies-logos/tcs.png";
 import ubs from "../../../public/companies-logos/ubs.png";
+
 
 const companyLogos = [
   { name: "Accenture", logo: accenture, minWidth: 180 },
@@ -31,7 +33,14 @@ const companyLogos = [
 
 export default function CompanyLogosSwiper() {
   return (
-    <div className="w-full py-12">
+    <div
+    //  style={{
+    //   transform: 'scale(0.8)',
+    // transformOrigin: 'top left',
+    // width: '125vw',
+    // display: 'inline-block',
+    // }}
+     className="w-full py-12">
       <h2 className="text-center text-white mb-10 text-3xl font-bold tracking-tight">
         Our Hiring Partners
       </h2>

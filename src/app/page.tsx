@@ -2,6 +2,12 @@
 // app/page.tsx
 'use client'
 
+
+import { NextSeo } from 'next-seo'; 
+import { DEFAULT_SEO } from '../../seo.config';
+
+
+
 import Navbar from "@/app/components/Navbar";
 import  Hero from "@/app/components/Hero"
 //import WhyChooseUs from "./components/WhyChooseUs";
@@ -14,11 +20,20 @@ import WhatSetsUsApart from "./components/WhatSetsUsApart";
 import CourseCards from "./components/CourseCards";
 import ImageGallery from "./components/ImageGallery"; 
 import SupremeAnnouncement from "./components/SupremeAnnouncement";
+import Head from "next/head";
 
 export default function Home() {
 
 
   return (
+    <>
+     <NextSeo {...DEFAULT_SEO} />
+    <Head>
+  <title>Master DSA & MERN Stack | Technirmaan - Best Coding Courses Online</title>
+  <meta name="description" content="Join India's top-rated DSA & MERN Stack courses. Get curated DSA sheets, live mentoring, and project-based learning to become job-ready. Enroll today!" />
+  <meta name="keywords" content="DSA course, MERN stack training, coding sheets, data structures algorithms, web development course, JavaScript, React, Node.js" />
+</Head>
+    
     <div  className="w-full bg-zinc-950 overflow-x-hidden"
     //  style={{
     //       transform: 'scale(0.8)',
@@ -43,5 +58,6 @@ export default function Home() {
       <Footer/>
  
      </div>
+     </>
   );
 }

@@ -30,11 +30,11 @@ export default function PaymentInfo() {
     // Fetch payment data
     const fetchPaymentData = async () => {
       try {
-        const response = await fetch('api/userPaymentInfo');
+        const response = await fetch('/api/userPaymentInfo');
         const data = await response.json();
         
-        if (data.message === "All submissions fetched successfully") {
-          setPaymentData(data.data);
+        if (data?.data) {
+          setPaymentData(data?.data);
         } else {
           setError('Failed to fetch payment data');
         }
